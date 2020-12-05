@@ -1,0 +1,17 @@
+1 )  whenever a databse change take place
+
+
+---> Ticket Collection
+---> Event Collection
+
+** Rollback with Transaction in Mongodb !!
+
+put the events in event collection and let  a worker thread take control of publishing the event rememeber this !!
+
+
+2  ) Fix the concurrency issue babe !!!
+
+3) One shared ID among different services yes ???
+
+4) Increment.include the 'version' number whenever the primary service responsible 
+for a record emits an event to describe a CUD(create,update,delete) TO a record
